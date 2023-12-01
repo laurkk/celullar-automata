@@ -3,20 +3,17 @@ Here I present you program created due to my BA thesis.
 This is a tool for Cellular Automata simulation. 
 It was projected to use it trough the command line and need 6 arguments to work:
 
-  ca_symulator.py arg1 arg2 arg3 arg4 arg5 arg6
+  ```ca_symulator.py arg1 arg2 arg3 arg4 arg5 arg6```
 
 1. Arg1 defines neighbourhood structure and has three options: 'moore' 'von_neumann' 'own'
    
 2. Arg2 defines size of the neighbourhood; if Moore's or von Neumann's was declared arg2 takes an integer "n" and creates a neighbourhood of size nXn.
    If own structure was declared, it takes path to the text file containing list of vertices' neighbours in the presented format:
 
-   0    :    2,5,8
-   
-   1    :    4,5,6,9
-   
-   2    :    1,2,5,7
-   
-   3    :    4
+```0  :  2,5,8
+   1  :  4,5,6,9
+   2  :  1,2,5,7
+   3  :  4```
 
    Where on the left side is the number of the vertex and on the right side are the numbers of vertices in his neighbourhood.
    No white lines are allowed, and user has to remember to use tabs, not spaces.
