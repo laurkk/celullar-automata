@@ -24,7 +24,8 @@ It was projected to use it trough the command line and need 6 arguments to work:
 ```
    Where state0 is the state of vertex number 0. The states must be presented by integers, so characters other than semicolons and integers are not allowed, including white spaces and new lines.
    There is also a possibility to set random states, which can be done by passing
-```random,x
+```
+random,x
 ```
    Where x stands for desired number of states.
    
@@ -32,7 +33,8 @@ It was projected to use it trough the command line and need 6 arguments to work:
    If the user wants the new state of a cell to depend on the state of the same cell in the first column of the row, they should place the output state of the cell in the second column, and the output state that will be adopted if the logical expression in the third column is satisfied, in the third column.
    For example:
    
-```1  0  sum(n)==4
+```
+1  0  sum(n)==4
 1  1  sum(n) in {0,3}
 ```
 
@@ -40,7 +42,8 @@ It was projected to use it trough the command line and need 6 arguments to work:
   According to the second rule, if a cell is in state 1 and the sum of its neighboring states is 0 or 3, the cell will transition to state 0.
   Similarly, for automata not considering the state of the cell undergoing evolution, the set of rules will take the form:
 
-```0  sum(n)==4
+```
+0  sum(n)==4
 1  sum(n) in {0,3}
 ```
 
@@ -49,7 +52,8 @@ It was projected to use it trough the command line and need 6 arguments to work:
   Regarding the definition of rules for probabilistic cellular automata, two columns are also used. 
   In the first column, you specify the state that the cell will adopt, and in the second column, you provide the probability associated with that transition. For example:
   
-```0  P(5/8)
+```
+0  P(5/8)
 1  P(3/8)
 ```
 
