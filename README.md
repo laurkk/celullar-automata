@@ -20,7 +20,8 @@ It was projected to use it trough the command line and need 6 arguments to work:
    No white lines are allowed, and user has to remember to use tabs, not spaces.
    
 3. ```arg3``` defines beginig states of the cells, can be passed as path to the text file containing list of the states separated by semicolons like:
-```state0;state1;state2
+```
+state0;state1;state2
 ```
    Where state0 is the state of vertex number 0. The states must be presented by integers, so characters other than semicolons and integers are not allowed, including white spaces and new lines.
    There is also a possibility to set random states, which can be done by passing
