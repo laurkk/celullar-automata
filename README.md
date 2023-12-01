@@ -36,13 +36,14 @@ It was projected to use it trough the command line and need 6 arguments to work:
    
 ```
    1  0  sum(n)==4
-   1  1  sum(n) in {0,3} ```
+   1  1  sum(n) in {0,3}
+```
 
   The above notation contains two rows, or two rules. The first rule states that if a cell is in state 1, it will transition to state 0 if the sum of its neighboring states is 4.
   According to the second rule, if a cell is in state 1 and the sum of its neighboring states is 0 or 3, the cell will transition to state 0.
   Similarly, for automata not considering the state of the cell undergoing evolution, the set of rules will take the form:
 
-  ```
+```
   0  sum(n)==4
   1  sum(n) in {0,3}
 ```
@@ -51,10 +52,12 @@ It was projected to use it trough the command line and need 6 arguments to work:
   However, if the sum is 0 or 3, the cell will transition to state 0 as well.
   Regarding the definition of rules for probabilistic cellular automata, two columns are also used. 
   In the first column, you specify the state that the cell will adopt, and in the second column, you provide the probability associated with that transition. For example:
+  
 ```
   0  P(5/8)
   1  P(3/8)
 ```
+
  This will be understood as: Adopting state 0 with a probability of 5/8. Adopting state 1 with a probability of 3/8.
  This means that for a given cell, there is a higher probability of transitioning to state 0 (5/8) than to state 1 (3/8) when the conditions for adopting either of these states are met.
  Mixing the above rule formats is not allowed. When creating logical expressions in the rule transition file, it is necessary to adhere to a specific syntax using the following guidelines:
