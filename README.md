@@ -34,10 +34,10 @@ It was projected to use it trough the command line and need 6 arguments to work:
    If the user wants the new state of a cell to depend on the state of the same cell in the first column of the row, they should place the output state of the cell in the second column, and the output state that will be adopted if the logical expression in the third column is satisfied, in the third column.
    For example:
    
-   ```
-   1  0  sum(n)==4
-   1  1  sum(n) in {0,3}
 ```
+   1  0  sum(n)==4
+   1  1  sum(n) in {0,3} ```
+
   The above notation contains two rows, or two rules. The first rule states that if a cell is in state 1, it will transition to state 0 if the sum of its neighboring states is 4.
   According to the second rule, if a cell is in state 1 and the sum of its neighboring states is 0 or 3, the cell will transition to state 0.
   Similarly, for automata not considering the state of the cell undergoing evolution, the set of rules will take the form:
