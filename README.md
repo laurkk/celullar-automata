@@ -96,4 +96,4 @@ random,x
 
 6. ```arg6``` is the path to the text file, where the results will be saved. If only name is passed, file is created in the current directory.
 
-
+You can try simulate famous "Game of life" passing Moore's neighbourhood and using ```game_of_life_rules.txt``` file provided in the repository. Enjoy!
